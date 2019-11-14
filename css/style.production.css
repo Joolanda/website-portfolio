@@ -65,7 +65,6 @@ a:focus {
 
 a:active {
   color: #357b70; /* selected link #48799c */
-  background-color: #fff5ee;
 }
 
 .button,
@@ -86,7 +85,7 @@ button {
 }
 
 .button__secondary {
-  background-color: #edc655;
+  background-color: #ffd924;
   color: #2b2b2b;
 }
 
