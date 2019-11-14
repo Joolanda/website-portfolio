@@ -85,8 +85,15 @@ button {
 }
 
 .button__secondary {
-  background-color: #ffd924;
+  background-color: #edc655;
   color: #2b2b2b;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 100px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
 }
 
 .button__tertiary {
