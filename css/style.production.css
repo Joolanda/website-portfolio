@@ -2,8 +2,8 @@
 
 /* Site colors
 
-background (SeaShell): #FFF5EE
-backround grid items (lightblue): #ADD8E6
+background (kiesel): #f5f5f5
+backround grid items (lightgrey): #ADD8E6
 button: #B5CE6F
 button secondary : #EDC655;
 button secondary font: #2b2b2b;
@@ -19,7 +19,7 @@ active link: #48799C
 }
 
 body {
-  background-color: #fff5ee;
+  background-color: #f5f5f5;
   color: inherit;
   font-family: 'Rajdhani', Helvetica, sans-serif;
   font-weight: 400;
@@ -29,10 +29,10 @@ body {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 2em;
   font-weight: 700;
-  color: #0761e8;
-  background-color: #fff5ee;
+  color: #3d3d3d;
+  background-color: #f5f5f5;
 }
 
 h2 {
@@ -45,21 +45,22 @@ h3 {
   font-weight: 700;
 }
 
+/* link styling */
 a {
   color: #357b70;
-  background-color: #fff5ee;
+  background-color: #f5f5f5;
+  font-size: 1.4em;
 }
 
 a:visited {
   /* visited link */
   color: #ff3d07;
-  background-color: #fff5ee;
+  background-color: #f5f5f5;
 }
 
 a:hover,
 a:focus {
   text-decoration: none; /* No underlining when hovering over a link */
-  font-style: italic; /* Italic style when hovering over a link */
   opacity: 0.7; /* reduces the opacity when hovering over a link to 70% */
 }
 
@@ -73,7 +74,7 @@ button {
   border: none;
   display: inline-block;
   font-family: inherit;/* takes the font from the outer container */
-  background-color: #b5ce6f;
+  background-color: #ff3d07;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -169,15 +170,18 @@ header {
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+  position: relative;
+  z-index: 0;
 }
 
 .navigation-list__item--active {
   text-decoration: none;
 }
 
+
 /* Profile Section */
 
-.profile {
+.profile, .contact, .about {
   max-width: 700px;
   margin: 0 auto;
 }
@@ -186,8 +190,14 @@ header {
   float: left;
   width: 250px;
   margin-right: 40px;
+  margin-top: 20px;
   border-radius: 50%;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.profile_body {
+  font-size: 24px;
+
 }
 
 #logo_Jol {
@@ -241,9 +251,9 @@ ul {
   flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: end;
   text-align: center;
-  width: 43%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -270,7 +280,7 @@ ul {
 }
 
 .grid__item {
-  background: lightblue;
+  background: #e1e3e3;
   padding: 10px;
   width: auto;
 }
@@ -381,7 +391,7 @@ ul {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 2em;
   }
 }
 
@@ -401,5 +411,41 @@ ul {
 /* SVG Home-town animation */
 .city-pic {
   display: flex;
-  text-align: left;
+  float: left;
+}
+.lighttower-illustration {
+  max-height: 500px;
+}
+
+/*Media Queries*/
+
+@media all and (max-width: 320px) {
+  .page-header {
+    width: 40%
+  }
+  .main_navigation {
+    width: 60%
+  }
+}
+
+@media all and (max-width: 500px) {
+  .lighttower-illustration {
+    max-height: 400px;
+    float: center;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-column-gap: 1em;
+    
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
 }
