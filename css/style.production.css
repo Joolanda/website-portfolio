@@ -1,13 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* Portfolio Site Style Production Sheet */
 
 /* Site colors
 
 background (kiesel): #f5f5f5
 backround grid items (lightgrey): #ADD8E6
-button: #B5CE6F
-button secondary : #EDC655;
+button: #8553e3
+button secondary :#edc655;
 button secondary font: #2b2b2b;
-button tertiary: #ffd924
 visited link: #FF3D07
 active link: #48799C
 
@@ -15,7 +21,7 @@ color:#33a254;
 
  */
 
-* {
+ * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -442,6 +448,8 @@ ul {
 
 /* SVG Home-town animation */
 .city-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   float: left;
 }
@@ -470,6 +478,7 @@ ul {
     float: center;
   }
   .grid {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-column-gap: 1em;
     
