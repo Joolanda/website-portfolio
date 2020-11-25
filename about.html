@@ -5,51 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>About - Jolanda Tinge</title>
+  <title>Jolanda Tinge - Portfolio</title>
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon_stern-16x16.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> -->
+  <!--  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 
-<body>
-  <!-- Header including the logo and the main navigation -->
+<body class="body body__about">
   <header class="page-header">
-    <!-- Add my logo here -->
-    <img src="img/Logo-JT.svg" alt="Personal logo of Jolanda Tinge" id="logo_Jol" class="page-header__item">
-    <!--<img src="http://via.placeholder.com/200x70" alt="logo" class="page-header__item">-->
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list_item--active">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+       <a class="navbar-brand" href="index.html"><img src="img/Logo-JT.svg" height="50" class="d-inline-block align-top" alt="Personal logo of Jolanda Tinge" id="logo_Jol" />
+      </a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="work.html">Work</a>
+          <a class="nav-item nav-link active" href="about.html">About<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav> 
   </header>
 
   <section class="about">
     <div>
-      <h1>About me!</h1>
+      <h1>About</h1>
     </div>
     <div>
-    <h3>
-      My name is Jolanda Tinge. I am becoming a <span>Web</span> Developer from Munich.
-      I was born and raised in the Netherlands. And meanwhile based in Munich area. I have over 15 years experience as a Media Advisor - responsible for the marketing and sales of business magazines and new products in a large international publishing company. I also enjoyed being part of a dedicated team, the hectic of meeting deadlines and finding creative solutions for customers. My spouses’s work took us to Bavaria, releasing a great opportunity for me to learn a new language, culture and ...explore the Alps!  <h2>How I became a web developer</h2>
-    <h3>
-      Currently I am attending <b>CareerFoundry</b>'s Web Development Course and learning the basics of coding, in HTML5, CSS3 and Javascript. This online portfolio is my first responsive web design and -like a basecamp is for exploring high alpine routes- this webpage is a perfect starting-point to show my abilities as a Full-Stack Developer!
-    </h3>
-  </div>
+      <h3>My name is Jolanda Tinge and I am becoming a <span>Web</span> Developer in Munich. I was born and raised in the Netherlands. Now I’m living in the southern part of Germany with my family. It’s a perfect base for alpine climbing which I love doing when I’m not behind a computer!<h1>How I became a web developer</h1>Before moving to Germany I was a primary school teacher. I loved to prepare lessons with new learning materials and the use of the digital blackboard for education. Before that, I worked in Sales and Marketing for many years, being responsible for sales support in Tech companies as well as in other branches (Publishers, Exhibitions). Currently I am attending <b>CareerFoundry</b>'s Web Development course and learning the fundamentals of coding. Being able to create something from nothing with code is so...awesome!</h3>
+    </div>
  
 <!--
   <p>This is what I enjoy doing:</p>
@@ -59,10 +50,8 @@
     <li>Digital marketing, Customer Journey, Personas </li>
     <li>Japanese Matrial Arts</li>
   </ul>
-
 -->
-  <a href="files/cv.pdf" class="button__tertiary" target="_blank" download>Download my CV</a><br><br>
-
+      <a href="files/cv.pdf" class="button__secondary" target="_blank" download>Download my CV</a><br><br>
 
   <svg xmlns="http://www.w3.org/2000/svg" class="lighttower-illustration" height="574" viewBox="0 0 765 574"
     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -237,12 +226,12 @@ style="fill:#000000;fill-opacity:0;stroke-width:1.14655173" />
 transform="scale(0.75000001)"
 id="path7545"
 d="m 455.6347,583.42733 c -0.45173,-0.48277 -31.15065,-1.30025 -68.21982,-1.81664 -48.56334,-0.6765 -71.72409,-1.44194 -82.87694,-2.739 -8.51315,-0.99007 -24.50754,-2.07896 -35.5431,-2.41976 -11.03556,-0.3408 -21.35453,-0.89576 -22.93104,-1.23325 -2.09151,-0.44774 4.5723,-3.1655 24.65087,-10.05357 15.13448,-5.19198 33.96659,-12.05058 41.84913,-15.24135 l 14.3319,-5.8014 24.65086,-1.18529 c 23.85777,-1.14717 25.03041,-1.31748 36.44837,-5.29376 11.16733,-3.88901 12.8209,-4.14497 30.9569,-4.79183 l 19.15938,-0.68336 9.74569,-5.50187 c 8.37065,-4.72561 17.60225,-9.16511 19.05812,-9.16511 0.2383,0 0.43326,10.57694 0.43326,23.50431 0,18.0202 0.33439,23.51257 1.43319,23.53971 0.78825,0.0195 5.24178,0.52981 9.89673,1.13408 19.1597,2.48718 42.39155,3.35095 60.43292,2.24691 18.36509,-1.12384 36.93717,-3.48846 45.49239,-5.79215 l 4.62193,-1.24455 -0.73494,-13.66829 c -0.82135,-15.27529 -0.57464,-15.69082 7.05577,-11.88427 2.82515,1.40938 10.80013,2.01311 37.97519,2.87485 28.82939,0.91421 35.93659,1.48403 43.89524,3.51935 8.29801,2.1221 14.12567,2.52163 46.18588,3.16644 l 36.68965,0.73791 10.31897,3.58725 c 28.31851,9.84458 57.97616,23.11127 55.17258,24.68023 -3.12445,1.74853 -16.12144,5.31053 -21.92259,6.00818 -3.15301,0.37919 -64.80883,1.18906 -137.01292,1.79971 -72.20409,0.61065 -149.08038,1.44417 -170.8362,1.85228 -21.75582,0.4081 -39.92564,0.34701 -40.37737,-0.13576 z"
-style="fill:#b5ce6f;fill-opacity:1;stroke-width:1.14655173" />
+style="fill:#e1e3e3;fill-opacity:1;stroke-width:1.14655173" />
 <path
 transform="scale(0.75000001)"
 id="path7547"
 d="m 472.54075,448.99468 c 0.3141,-3.62597 1.33303,-28.52047 2.26429,-55.32112 0.93125,-26.80064 2.01909,-54.73353 2.41741,-62.07308 l 0.72423,-13.34464 4.15985,-0.70036 c 6.39729,-1.07707 66.94978,-2.30777 70.44044,-1.43167 3.86573,0.97023 3.95928,2.74855 0.21941,4.17045 -2.87043,1.09133 -3.47333,2.81696 -2.17044,6.21226 0.55251,1.43981 2.54378,1.8136 9.66162,1.8136 7.6262,0 9.02379,-0.29977 9.35463,-2.00647 0.21392,-1.10355 2.33185,25.85474 4.70651,59.90733 2.37465,34.05258 4.5826,63.59062 4.90655,65.64008 l 0.589,3.72629 h -53.9223 -53.92231 z"
-style="fill:#d40000;fill-opacity:0;stroke-width:1.14655173" />
+style="fill:#fff;fill-opacity:0;stroke-width:1.14655173" />
 <path
 transform="scale(0.75000001)"
 id="path7549"
@@ -303,18 +292,20 @@ style="fill:#1a232c;fill-rule:evenodd;stroke-width:0.75" />
 transform="scale(0.75000001)"
 id="path7609"
 d="m 505.92031,564.63403 c -1.25927,-0.79789 -1.47912,-6.04779 -1.14655,-27.37948 0.36939,-23.69342 0.62769,-26.63122 2.52594,-28.72861 1.56083,-1.72456 1.91224,-3.25711 1.34209,-5.85296 l -0.77238,-3.51666 h -13.09425 -13.09424 v 4.46354 c 0,3.04178 0.58682,4.68872 1.8423,5.17049 1.63466,0.62728 1.79619,3.66713 1.43319,26.97123 -0.22501,14.44534 -0.69746,26.55254 -1.04987,26.90488 -0.82701,0.82683 -11.87114,-0.47153 -13.71749,-1.61264 -1.37081,-0.84721 -0.89631,-22.48353 1.87921,-85.68845 l 0.71747,-16.33836 h 53.21202 c 41.55587,0 53.31445,0.31394 53.67962,1.43319 0.84284,2.58337 4.17317,56.00218 4.81758,77.27455 0.72859,24.05117 2.48233,21.17667 -14.52955,23.81506 -22.84629,3.54326 -60.46166,5.3547 -64.04509,3.08422 z"
-style="fill:#d64a4a;fill-opacity:1;stroke-width:1.14655173" />
+style="fill:#e1e3e3;fill-opacity:1;stroke-width:1.14655173" />
 <path
 transform="scale(0.75000001)"
 id="path7611"
 d="m 478.65482,287.99861 c 0.42473,-14.71347 1.1005,-34.87795 1.50172,-44.80995 l 0.72949,-18.05819 h 4.41037 4.41038 v 13.06267 c 0,10.55359 -0.33035,13.18944 -1.71983,13.72264 -2.27292,0.8722 -2.20768,4.88559 0.0938,5.76874 0.99748,0.38277 6.15696,0.69595 11.46551,0.69595 9.47881,0 9.65192,-0.0504 9.65192,-2.80941 0,-1.54518 -0.89329,-3.30932 -1.98509,-3.92032 -1.65091,-0.92389 -2.05829,-3.24968 -2.41994,-13.81559 l -0.43485,-12.70468 h 28.76878 28.76879 l 0.56027,2.57974 c 0.53046,2.44245 6.4027,80.58956 6.37553,84.84482 -0.007,1.10356 -0.78673,2.00647 -1.73263,2.00647 -1.41408,0 -1.71983,-2.03832 -1.71983,-11.46552 v -11.46552 h -4.58621 -4.5862 v 10.69764 10.69764 l -29.52371,-0.092 c -16.23804,-0.0506 -33.86098,0.33742 -39.1621,0.86231 l -9.63839,0.95436 z"
-style="fill:#d64a4a;fill-opacity:1;stroke-width:1.14655173" />
+style="fill:#e1e3e3;fill-opacity:1;stroke-width:1.14655173" />
 <path
 transform="scale(0.75000001)"
 id="path7615"
 d="m 494.86626,85.375099 -4.58621,-0.697212 9.74569,-7.022055 c 12.14383,-8.749986 17.28513,-11.886495 19.49138,-11.890947 0.94591,-0.0019 7.49473,4.307527 14.55294,9.576523 l 12.8331,9.579993 -9.39345,0.731285 c -11.1626,0.869013 -36.17208,0.706214 -42.64345,-0.277587 z"
-style="fill:#d64a4a;fill-opacity:1;stroke-width:1.14655173" />
+style="fill:#e1e3e3;fill-opacity:1;stroke-width:1.14655173" />
 </svg>
+
+</section>
 
 
 <!-- Add table for my skills here -->
@@ -359,21 +350,22 @@ style="fill:#d64a4a;fill-opacity:1;stroke-width:1.14655173" />
   <a href="https://codepen.io/kyleshook/pen/zYOeMab">Check out Kyle's Pen</a>
   </section>
 -->
-</section>
+
 <footer class="page-footer">
   <p>Find me on</p><!--Scoial Media Icons-->
-  <div class="social-media">
-    <a href="#" target="_blank"><img src="img/github_313107.svg" alt="github"></a>
-    <a href="#" target="_blank"><img src="img/Twitter_UI-01_2310223.svg" alt="Twitter"></a>
-    <a href="#" target="_blank"><img src="img/linkedin_square_color_107091.svg" alt="LinkedIn"></a>
-  </div>
-    </footer>
-    <!--
-    You can
-    comment out
-    any number of lines.
-  -->
-  <script src="js/tota11y.min.js"></script>
+    <div class="social-media">
+      <a href="https://github.com/Joolanda" target="_blank"><img src="img/github_313107.svg" alt="github logo"></a>
+      <a href="https://twitter.com/701anda" target="_blank"><img src="img/Twitter_UI-01_2310223.svg" alt="Twitter"></a>
+      <a href="https://www.linkedin.com/in/jolanda-tinge" target="_blank"><img src="img/linkedin_square_color_107091.svg" alt="LinkedIn"></a>
+    </div>
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"></script>
+<script src="js/tota11y.min.js"></script>
 
 </body>
+
 </html>
