@@ -228,7 +228,8 @@ header {
 /* About Page */
 
 .about {
-  display: block;
+  width: 100%;
+  /* display: block; */
   text-align: center;
 }
 
@@ -449,15 +450,17 @@ ul {
   text-align: center;
 }
 
-/* SVG Home-town animation */
-.city-pic {
+ /* SVG Home-town animation */
+/* .city-pic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   float: left;
-}
+}  */
 .lighttower-illustration {
   max-height: 500px;
+  display: block;
+  margin: 0 auto;
 }
 
 /*Media Queries*/
