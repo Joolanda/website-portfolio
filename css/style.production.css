@@ -230,8 +230,6 @@ header {
 .about {
   display: block;
   text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .list_item {
@@ -423,7 +421,7 @@ ul {
   }
 }
 
-@media all and (max-width: 750px) {
+/* @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
@@ -431,7 +429,7 @@ ul {
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
-  }
+  } */
 
   h1 {
     font-size: 2em;
