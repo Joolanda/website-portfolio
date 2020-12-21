@@ -306,6 +306,9 @@ ul {
   margin-bottom: 5%;
   border: 6.5px solid#f5f5f5;
 }
+.video {
+  margin-bottom: 5%;
+}
 /* Grid fallback */
 .grid__item {
   display: inline-block;
