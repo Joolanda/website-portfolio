@@ -12,12 +12,13 @@
 background (kiesel): #f5f5f5
 backround grid items (lightgrey): #ADD8E6
 button: #8553e3
-button secondary :#edc655;
-button secondary font: #2b2b2b;
+button secondary :#896b4c;
+button secondary font:  #fff;
 visited link: #FF3D07
-active link: #48799C
+active link: 
+active page: #0af primary;
 
-color:#33a254; 
+color text link:#337ab7; 
 
  */
 
@@ -29,16 +30,22 @@ color:#33a254;
 body {
   background-color: #f5f5f5;
   color: inherit;
-  font-family: 'Rajdhani', Helvetica, sans-serif;
+  font-family: 'Lora', 'Helvetica Neue LT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   margin: 150px 20px 20px;
 }
-
-
+.body-text {
+    text-decoration: underline;
+}
+.body-text__item {
+  color: #337ab7;
+  font-weight: 2em;
+  text-decoration: underline;
+}
 header {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -48,17 +55,63 @@ header {
   background-color: #f5f5f5;
 }
 
+h1,
+.h1 {
+  font-family: 'Montserrat', 'Helvetica Neue LT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1;
+}
 
+h2,
+.h2 {
+  margin: 15px 0;
+  padding: 0;
+  font-family: 'Montserrat', 'Helvetica Neue LT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
 
+h3,
+.h3 {
+  margin: 12px 0;
+  padding: 0;
+  font-family: 'Montserrat', 'Helvetica Neue LT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.text-outline {
+  color: #00222e;
+  font-weight: bold;
+  letter-spacing: 1px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #00222e;
+}
+
+/* 
 h1 {
   font-size: 2em;
   font-weight: 700;
   color: #3d3d3d;
   background-color: #f5f5f5;
   line-height: 1.2;
-}
+} */
 
-h2 {
+/* h2 {
   font-size: 24px;
   font-weight: 700;
 }
@@ -66,7 +119,7 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 700;
-}
+} */
 
 /* link styling */
 /* a {
@@ -76,56 +129,62 @@ h3 {
 }
  */
 
+a {
+  color: #00222e;
+}
+
+a,
 a:link,
-a:visited {
-  color: #8553e3;
-  outline: none;
-  font-size: 1.4em;
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
 }
 
 a:hover,
 a:active {
-  color: #33a254;
-  text-decoration: none;
-  outline: none;
+  color: #405962;
 }
 
-a:focus {
-  text-decoration: none;
-  /* No underlining when hovering over a link */
-  opacity: 0.7;
-  /* reduces the opacity when hovering over a link to 70% */
+.text-primary {
+  color: #0af;
 }
 
 .button,
 button {
-  /* overwrites browser defaults */
-  border: none;
+  margin: 5px 0 0 0;
+  padding: 15px 20px;
+  max-width: 100%;
   display: inline-block;
-  font-family: inherit;
-  /* takes the font from the outer container */
-  background-color: #8553e3;
-  color: white;
+  font-weight: bold;
+  color: #fff;
+  background-color: #666;
+  border: solid #666 2px;
+  border-radius: 5px;
+}
+
+.button__primary {
+  font-family: 'Montserrat', 'Helvetica Neue LT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  background-color:#0af;
+  border-color:#0af;
   text-decoration: none;
-  padding: 10px;
-  border-radius: 100px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
-  transition: 0.2s opacity;
-  margin: 20px;
+  padding: 15px 20px;
+  font-weight: lighter;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .button__secondary {
-  background-color: #edc655;
-  color: #2b2b2b;
+  font-family: 'Montserrat', 'Helvetica Neue LT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  background-color: #896b4c;
+  border-color: #896b4c;
   text-decoration: none;
-  padding: 10px;
-  border-radius: 100px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
-  transition: 0.2s opacity;
+  padding: 15px 20px;
+  font-weight: lighter;
+  color: #fff;
+  border-radius: 5px;
 }
 
 /* .contact-form__button {
@@ -162,6 +221,7 @@ header {
   padding: 20px;
   margin: auto;
   border-bottom: 1px;
+  text-transform: lowercase;
 }
 
 .page-header__item {
@@ -178,20 +238,37 @@ header {
 }
 
 /* Navigation section */
-
 .navbar {
-  background-color: #f5f5f5;
-  /* background: white; */
-  background: #f5f5f5;
+  padding-top: 20x;
+  width: 100%;
+  background-color: #fff;
+  font-family: 'Montserrat', 'Helvetica Neue LT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  position: fixed;
+}
+
+.navbar-brand {
+  margin-right: 16rem;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: inline-flex;
+  float: right;
+  margin-left: 12rem;
+  margin-inline-start: 5rem;
 }
 
 .navigation-list {
   list-style-type: none;
+  float: right;
 }
 
-.navigation-list li {
+.navigation-list li a {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 20px;
+  margin-inline: 1rem;
+  text-transform: lowercase;
   position: relative;
   z-index: 0;
 }
@@ -200,9 +277,24 @@ header {
   text-decoration: none;
 }
 
+.main-nav li {
+  float: right;
+}
+
+.text-outline {
+  color: #00222e;
+  font-weight: bold;
+  letter-spacing: 1px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #00222e;
+}
+
+.text-italic {
+  font-style: italic;
+}
 
 /* Profile Section */
-
 .profile,
 .contact,
 .about {
@@ -215,8 +307,16 @@ header {
   width: 250px;
   margin-right: 100px;
   height: auto;
-  border-radius: 5%;
+  border-radius: 2%;
   margin-bottom: 50px;
+}
+
+.hero__portrait {
+  max-width: 100%;
+  position: relative;
+  height: auto;
+  opacity: 50%;
+  margin-bottom: 2em;
 }
 
 .profile_body {
@@ -236,7 +336,6 @@ header {
 }
 
 /* About Page */
-
 .about {
   width: 100%;
   /* display: block; */
@@ -253,6 +352,7 @@ li {
 }
 
 ul {
+  display: block;
   list-style-type: none;
   text-decoration: none;
 }
@@ -273,7 +373,7 @@ ul {
 
 .contact {
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 .contact-form {
@@ -292,10 +392,15 @@ ul {
   margin: 0 auto;
   border: 1px;
 }
+.contact-form__label {
+  font-family: 'Montserrat', 'Helvetica Neue LT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+  text-align: left;
+}
 
 .contact__input {
-  font-family: Helvetica, sans-serif;
-  font-size: 0.9em;
+  font-family: 'Lora', 'Helvetica Neue LT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
   border-radius: 6px;
   border: 2.5px solid #e1e3e3;
   display: inline-block;
@@ -307,11 +412,12 @@ ul {
 }
 
 .button__form {
+  display: left;
   margin-left: auto;
+  font-family: 'Montserrat', 'Helvetica Neue LT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* Work Section */
-
 .work {
   display: block;
   text-align: center;
@@ -347,7 +453,6 @@ ul {
   background-image: "img/bg_texture.png";
   padding: 10px;
   width: auto;
-  border-radius: 2%;
 }
 
 /* .grid__item:hover {
@@ -459,10 +564,9 @@ ul {
 h1 {
   font-size: 2em;
 }
-}
 
 /* Footer */
-.page-footer {
+/* .page-footer {
   clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -472,8 +576,28 @@ h1 {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
+} */
+
+.page-footer {
+  font-family: 'Montserrat', 'Helvetica Neue LT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  clear: both;
+  text-align: right;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  justify-content: right;
+  width: 100%;
+  background-color: var(--background-primary);
+  padding: 2em;
 }
 
+.transition {
+  font-family: 'Montserrat', 'Helvetica Neue LT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  justify-content: left;
+  font-size: 0.8em;
+  text-align: left;
+}
 /* SVG Home-town animation */
 /* .city-pic {
   display: -webkit-box;
