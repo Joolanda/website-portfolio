@@ -445,7 +445,11 @@ ul {
 .video {
   margin-bottom: 5%;
 }
-
+/* carousel */
+.carousel-inner img{
+  width：100%;
+  height: 100%;
+}
 /* Grid fallback */
 .grid__item {
   background: #e1e3e3;
