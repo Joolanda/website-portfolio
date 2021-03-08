@@ -42,8 +42,8 @@
 <body class="body body__index">
   <section class="profile">
     <div>
-      <h1 class="profile__name">Hey, I'm Jolanda Tinge, and I'm a full-stack</h1>
-      <h1 class="profile__name"><span class="text-outline"><p>web</p></span>developer</h1>
+      <h1 class="profile__name">Hey, I'm Jolanda Tinge, and I'm a</h1>
+      <h1 class="profile__name"><span class="text-outline"><p>full-stack</p></span>Web Developer</h1>
     </div>
     <br>
     <div>
@@ -64,11 +64,39 @@
       </div>
       <hr>
       <div>
-        <p>I’d love to hear more about your company and how I can help out.<br><br> Interested in working together? <a href="contact.html" class="button__primary btn-sm" target="_blank">contact me</a>
+        <br>
+        <p>I’d love to hear more about your company and how I can help out.<br><br> Interested in working together? <a href="contact.html" class="button__tertairy btn-sm" target="_blank">contact me</a>
         </p>
       </div>
     </div>
-  </section>
+  </section><br>
+
+    <!-- My Work -->
+    <section class="profile" id="work">
+      <h1>Work <span class="text-outline">portfolio</span></h1>
+      <p class="section__subtitle section__subtitle--work">Check out some of my projects --here comes CAROUSEL-- </p>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="movie">
+          <a href="work.html" role="button"></a><img src="img/movie.png" { margin: 0 auto; } class="d-md-block w-100" alt="..."></a>
+        </div>
+        <div class="carousel-item" id="chat">
+          <a href="work.html" role="button"></a><img src="img/chat.png" { margin: 0 auto; } class="d-md-block w-100" alt="..."></a>
+        </div>
+        <div class="carousel-item" id="meet">
+          <a href="work.html" role="button"></a><img src="img/meet.png" { margin: 0 auto; } class="d--md-block w-100" alt="..."></a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" onclick="meet" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden" onclick="meet"></span>>Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" onclick="chat" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden" onclick="chat">Next</span>
+      </button>
+    </div>
 
   <footer class="page-footer">
     <hr>
