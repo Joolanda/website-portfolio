@@ -11,14 +11,14 @@ The goal for this project was to create a simple website portfolio without the u
 - [ ] Add screenshot or gif of my new portfolio website 
 - [ ] New style-sheet
 - [x] New logo, flavicon 
-- [ ] Create Hero image, main page
+- [x] Create Hero image, main page
 - [ ] One page navigation
 - [ ] New footer with scroll up button
 - [ ] Contact form - validation (or leave this out - wait for next version?)
 - [x] Navbar animation on big screens
 - [x] Hamburger menu for small screens
-- [ ] Content for let's start 'blogging'
-- [ ] Re-design my work, screenshots with links
+- [x] Content for let's start 'blogging'
+- [x] Re-design my work, screenshots with links
 - [ ] Develop new version with Create React App?
 - [ ] Learn about Netlify and Formik
 - [ ] External hosting
