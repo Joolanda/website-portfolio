@@ -1,5 +1,9 @@
 # Personal Portfolio Website
-(You can view my personal portfolio at:)
+You can also view my personal portfolio at:
+https://jolandatinge.netlify.app/blog.html
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ed4c89a8-8217-4ed8-9167-36890aa9f7dc/deploy-status)](https://app.netlify.com/sites/jolandatinge/deploys)
+
 
 ## Description
 This responsive website is presenting my portfolio as a web developer. It was my first project on CareerFoundry Web developer Course and will be continuously updated. It's created in HTML & CSS from scratch with no framework used. It is fully responsive & contains CSS flexbox, grid, transitions, animations.
