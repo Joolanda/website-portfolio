@@ -1,5 +1,7 @@
 # Personal Portfolio Website
 You can also view my personal portfolio at:
+https://joolanda.github.io/website-portfolio/
+
 https://jolandatinge.netlify.app
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ed4c89a8-8217-4ed8-9167-36890aa9f7dc/deploy-status)](https://app.netlify.com/sites/jolandatinge/deploys)
