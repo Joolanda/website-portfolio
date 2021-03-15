@@ -8,7 +8,7 @@ The goal for this project was to create a simple website portfolio without the u
 
 ## Planned updates:
 - [x] Add ReadMe
-- [ ] Add screenshot or gif of my new portfolio website 
+- [x] Add screenshot or gif of my new portfolio website 
 - [ ] New style-sheet
 - [x] New logo, flavicon 
 - [x] Create Hero image, main page
