@@ -29,3 +29,5 @@ The goal for this project was to create a simple website portfolio without the u
 - [ ] Develop new version with Create React App?
 - [ ] Learn about Netlify and Formik
 - [ ] External hosting
+- [ ] medium icon
+- [x] Add Casestudy MyFlix
