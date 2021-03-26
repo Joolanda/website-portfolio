@@ -43,15 +43,147 @@
       </div>
       <br>
       <div> 
-        <p class="text-italic">Image 1: screenshot mainpage MyFlix Movie</p></div>
+        <p class="text-italic">Image 1: screenshot mainpage MyFlix Movie</p>
+      </div>
       <div>
         <img src="../../website-portfolio/img/movie.png" class="hero__portrait" alt="Image 1: Screenshot mainpage MyFlix Movie">
       </div>
 
       <!-- here comes my new case study page filling  -->
-      <img src="../../website-portfolio/img/movie_square.png" class="profile__portrait" alt="Image 1: Screenshot mainpage MyFlix Movie">
+
+        <h3 class="profile__name">
+          Overview
+         </h3>
         <div>
-    <h1 class="profile__name">Case <span class="text-outline">study </span></h1>
+          MyFlix is a Movie web application consisting of a database with various movies and a client-side providing users with several features the access to information about different movies, directors and genres. Users are able to sign in and create a list of their favorite movies.
+        </div>
+        <br>
+        <div>
+           <h3 class="profile__name">
+          Purpose <span class="text-outline">&</span> Context</h3>
+         </div>
+        <div>
+           This project was part of the Career Foundry Web Development course. It is a perfect example to demonstrate my mastery of full-stack JavaScript development.
+        </div>
+         <br>
+        <h3 class="profile__name">
+          Objective
+        </h3>
+        <div>
+          The aim of the project was to master a complete web application with a frontend and backend, using full-stack JavaScript technologies which I can showcase in my portfolio. Also, I had a personal objective to learn more about the tech architecture and be better equipped to make decisions regarding which framework or library to use for my future projects.
+        </div>
+
+         <h3 class="profile__name">
+          Process
+         </h3>
+         <div>
+          <div class="image-title-right"> 
+            <h6 class="text-italic">Image 2: Using MVC architecture to scructure the code that makes up a client layer
+              Source: Wikipedia Commons
+            </h6>
+          <img src="../../website-portfolio/img/mvc_flix.png" class="casestudy__portrait" alt="infografic of mvc structure">
+          </div>
+        </div>
+
+         <ul>
+           <li>
+           •  The first step of my <span class="body-text__item"> development process </span>was to built the database and write the back-end logic of how to access the application.<br>
+           </li>
+          <li>
+          • The next step was to develop the interactive front-end that enables users to experience the app's features.<br>
+           </li>
+          <li>
+          • Use version control along the way to track changes and host the code on GitHub.<br>
+           </li>
+          </ul>
+
+          <div>
+            <div class="image-title-right"> 
+              <h6 class="text-italic">Image 3: Testing Endpoints with Postman. In this example a GET request for a single movie by title.
+              </h6>    
+            <img src="../../website-portfolio/img/postman_flix.png" class="casestudy__portrait" alt="screenshot of Postman">
+            </div>
+          </div>
+          <div>
+            The <span class="body-text__item">server side </span>of the web application consists of a REST API and a database built with JavaScript, Node.js, Express, and MongoDB. The API can be accessed via commonly used HTTP methods like GET, PUT, POST and DELETE. For retrieving data from the database and store in a non-relational way, I used the CRUD operations “create”, “read”, “update” and “delete”. The API provides movie and user information in JSON.files
+          </div>
+          <div class="image-title-right"> 
+            <h6 class="text-italic">Image 4: Example of a JSON.file 
+            </h6>
+            <div>
+            <img src="../../website-portfolio/img/json_flix.png" class="casestudy__portrait" alt="screenshot of a JSON-file">
+            </div>
+          </div>
+
+          <div>
+            I used Postman for endpoint testing and Mongoose for the business layer logic. The database was built with MongoDB; the final project is hosted on Heroku.
+          </div>
+          <div>
+            For more information about each endpoint of the REST API, see documentation.hmtl
+          </div>
+          <br>
+          <div>
+          <div>
+            The <span class="body-text__item">client side </span>was built with React. The goal was to develop a single-page, responsive application that uses routing, different interactions and has several interface views.<br>
+          </div>
+          <br>
+          <div>
+            React is a JavaScript-based library that does not have the ability to make HTTP requests. This is a technical requirement, in that we want to allow the users to make GET, POST, PUT, and DELETE REST API calls in React App.
+          </div>
+          <br>
+          <div>
+            For this reason I imported a third party library Axios in my React Application. Axios makes it easy to send asynchronous HTTP requests to REST endpoints and perform CRUD operations. So the solution was very simple by implementing this as a dependency. 
+          </div>
+          <br>
+          <div>
+            see https://github.com/Joolanda/MyFlix-Movie-app for more on Features and Dependencies.
+          </div>
+          <div>
+            <div class="image-title-left"> 
+              <h6 class="text-italic">Image 5: Example of MyFlix Movie, added movied to favorites
+              </h6> 
+            <img src="../../website-portfolio/img/movie_square.png" class="casestudy__portrait" alt="screenshot of MyFlix Movie app">
+            </div>
+          </div>
+
+          <div>
+            <h3 class="profile__name">
+            Challenges
+          </h3>
+          </div>
+          <div>
+            Developing the MyFlix Movie app has been an enriching learning experience in my web development education. Some of the features I implemented required me to gain a deeper understanding of React and Redux.
+          </div>
+          <br>
+          <div>
+            <div class="image-title-right"> 
+              <h6 class="text-italic">Image 6: Example of the 401 Error
+              </h6>
+            
+            <img src="../../website-portfolio/img/error404_flix.png" class="casestudy__portrait" alt="screenshot of error404">
+            </div>
+          </div>
+          <div>
+            <p class="text-italic">
+            Overcoming Obstacles
+            </p>
+          </div>
+          <div>
+            A small problem encountered in development was the update profile feature. I was keep getting a 401 unauthorized response from the API request, and this is because I was not setting the Authorization header correctly. It’s a nice example of how Axios makes a PUT call to React App. 
+          </div>
+          <br>
+
+          <div>
+            <p>
+            Role: Lead Developer<br>
+            <!-- Link: https://myflix-movie.herokuapp.com/<br> -->
+            Technologies used: MERN Stack (MongoDB, React, and NodeJS), Redux and Flux.<br>
+            Duration: 3 month<br>
+            Credits:  Ali El Zoheiry (Tutor), <br>
+            Akunna Nwosu (Mentor)<br>
+            </p>
+          </div>
+
           <p><br><br>
           <a href="../../website-portfolio/files/Casestudy_MyFlixMovie.pdf" class="button__secondary btn-sm" target="_blank" download>download here as pdf</a>
           </p>
