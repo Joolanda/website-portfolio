@@ -84,6 +84,7 @@ h3,
   font-weight: 500;
 }
 
+}
 hr {
   display: block;
   unicode-bidi: isolate;
@@ -333,9 +334,37 @@ header {
   max-width: 100%;
   position: relative;
   height: auto;
-  opacity: 50%;
+  opacity: 70%;
   margin-bottom: 2em;
   z-index: -1;
+}
+
+.article__portrait {
+  max-width: 60%;
+  position: relative;
+  height: auto;
+  opacity: 70%;
+  margin-bottom: 2em;
+  z-index: -1;
+}
+
+.casestudy__portrait_right {
+  float: right;
+  width: 300px;
+  margin-left: 100px;
+  margin-top: 10px;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: 50px;
+}
+.casestudy__portrait_left {
+  float: left;
+  width: 300px;
+  margin-top: 20px;
+  margin-right: 100px;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: 50px;
 }
 
 .profile_body {
@@ -438,6 +467,50 @@ ul {
   font-family: 'Montserrat', 'Helvetica Neue LT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+/* Article Section */
+.article {
+  max-width: 700px;
+  display: block;
+  padding-top: 90px;
+  text-align: cleft;
+  margin-bottom: 5%;
+  margin-bottom: 5%;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.article-title {
+  display: block;
+  text-align: left;
+  padding-top: 10px;
+  margin-bottom: 5%;
+}
+
+.image-title-right {
+  display: right;
+  margin-left: 220px;
+  text-align: right;
+  /*   padding-top: 10px;
+  margin-bottom: 5%; */
+}
+
+.image-title-left {
+  display: block;
+  display: left;
+  margin-right: 330px;
+  /* float: left; */
+  text-align: left;
+  /*   padding-top: 10px;
+  margin-bottom: 5%; */
+}
+.images-block {
+  display: right;
+  margin-left: 220px;
+  text-align: right;
+  /*   padding-top: 10px;
+  margin-bottom: 5%; */
+}
+
 /* Work Section */
 .work {
   display: block;
@@ -507,7 +580,7 @@ ul {
  */
 .grid__item:last-child {
   -ms-grid-column: 3;
-  grid-column: 3 / 2; 
+  grid-column: 3 / 2;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
