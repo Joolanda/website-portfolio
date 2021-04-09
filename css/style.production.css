@@ -269,6 +269,7 @@ header {
 }
 
 .navbar-brand {
+  margin-left: 20px;
   margin-right: 16rem;
 }
 
@@ -285,21 +286,42 @@ header {
   float: right;
 }
 
+.nav-item {
+  margin-left: 20px;
+  padding: 10px 10px;
+  display: block;
+  text-transform: lowercase;
+}
+
 .navigation-list li a {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 30px;
+  padding: 20px 10px;
+  display: block;
   margin-inline: 1rem;
   text-transform: lowercase;
-  position: relative;
-  z-index: 0;
+}
+
+.nav-btn {
+  margin-top: 3px;
+  padding: 0;
+  width: 30px;
+  float: right;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
 }
 
 .navigation-list__item--active {
   text-decoration: none;
 }
 
-.main-nav li {
+.main-nav li a {
   float: right;
+  margin-left: 30px;
+  padding: 10px 10px;
+  display: block;
+  text-transform: lowercase;
 }
 
 .text-outline {
@@ -379,7 +401,7 @@ header {
 }
 
 #logo_Jol {
-  width: 200px;
+  /*width: 200px; */
   height: 70px;
   margin: 16px 0;
 }
@@ -765,6 +787,10 @@ h1 {
 
   .main_navigation {
     width: 60%
+  }
+
+  .navbar-toggler-icon {
+    float: right
   }
 }
 
