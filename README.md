@@ -23,7 +23,7 @@ The goal for this project was to create a simple website portfolio without the u
 - [ ] monthly content for let's start 'blogging'
 - [ ] Develop new version with Create React App?
 - [ ] Learn about Formik
-- [ ] External hosting branche 
+- [x] External hosting branche 
 - [ ] subpages routing
 - [x] Medium icon
 - [ ] Add Casestudy, Meet
