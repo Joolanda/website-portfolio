@@ -14,20 +14,18 @@ This responsive website is presenting my portfolio as a web developer. It was my
 The goal for this project was to create a simple website portfolio without the use of libraries. I'm always looking for new ways or use of technologies to showcase my personal work to implement in my portfolio website. Maybe using Create React App in my next version and use _Figma_ and a style guide. I never run out of new ideas! 
 
 ## Planned updates:
-- [x] Add ReadMe
-- [x] Add screenshot or gif of my new portfolio website 
 - [ ] New style-sheet
-- [x] New logo, flavicon 
-- [x] Create Hero image, main page
-- [ ] One page navigation
+- [ ] Hero image, whole width
+- [ ] Logo, fine design
+- [ ] Animation, vector
 - [ ] New footer with scroll up button
-- [ ] Contact form - validation (or leave this out - wait for next version?)
-- [x] Navbar animation on big screens
-- [x] Hamburger menu for small screens
-- [x] Content for let's start 'blogging'
-- [x] Re-design my work, screenshots with links
+- [ ] Contact form with validation?
+- [ ] monthly content for let's start 'blogging'
 - [ ] Develop new version with Create React App?
-- [ ] Learn about Netlify and Formik
-- [ ] External hosting
-- [ ] medium icon
-- [x] Add Casestudy MyFlix
+- [ ] Learn about Formik
+- [x] External hosting branche 
+- [ ] subpages routing
+- [x] Medium icon
+- [ ] Add Casestudy, Meet
+- [ ] Add Project, Python
+- [x] Button, handling e-mail
