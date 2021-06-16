@@ -64,6 +64,7 @@ body {
   text-decoration: underline;
 }
 
+/* Buttons */
 .button,
 button {
   margin: 10px 20px 0 0;
@@ -121,6 +122,12 @@ button:hover,
 button:focus {
   cursor: pointer;
   opacity: 0.8;
+}
+
+/* carousel */
+.carousel-inner {
+  overflow: hidden;
+  z-index: -1;
 }
 
 header {
@@ -199,6 +206,7 @@ header {
   font-family: 'Montserrat', 'Helvetica Neue LT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
   position: fixed;
+  z-index: 10;
 }
 
 .navbar-brand {
@@ -485,11 +493,6 @@ ul {
 
 .video {
   margin-bottom: 5%;
-}
-
-/* carousel */
-.carousel-inner {
-  position: relative;
 }
 
 /* Grid fallback */
