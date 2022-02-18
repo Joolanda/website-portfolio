@@ -27,5 +27,5 @@ The goal for this project was to create a simple website portfolio without the u
 - [ ] subpages routing
 - [x] Medium icon
 - [ ] Add Casestudy, Meet
-- [ ] Add Project, Python
+- [x] Add Project, Python
 - [x] Button, handling e-mail
