@@ -285,9 +285,9 @@ header {
   color: #00222e;
   font-weight: bold;
   letter-spacing: 1px;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #c5dcee;
   -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: #00222e;
+  -webkit-text-stroke-color: #c881a4;
 }
 
 .text-italic {
